@@ -47,17 +47,17 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative py-24 md:py-32">
+    <section id="testimonials" className="relative py-24 md:py-32 bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-bold tracking-[0.2em] uppercase text-primary mb-4">
             Testimonials
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             What Our Clients Say
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-lg text-slate-600">
             Don't just take our word for it. Here's what our satisfied customers
             have to say about our services.
           </p>
@@ -68,7 +68,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative rounded-2xl bg-card border border-border p-8 card-hover"
+              className="relative rounded-2xl bg-white border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
               {/* Quote Icon */}
               <Quote className="absolute top-6 right-6 h-8 w-8 text-primary/20" />
@@ -76,25 +76,25 @@ const Testimonials = () => {
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
                 ))}
               </div>
 
               {/* Content */}
-              <p className="text-foreground leading-relaxed mb-6">
+              <p className="text-slate-700 leading-relaxed mb-6">
                 "{testimonial.content}"
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary to-cyan-400 flex items-center justify-center text-white font-bold">
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">
+                  <h4 className="font-semibold text-slate-900">
                     {testimonial.name}
                   </h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-slate-500">
                     {testimonial.role}
                   </p>
                 </div>

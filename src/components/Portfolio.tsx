@@ -47,7 +47,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="relative py-24 md:py-32 bg-card/30">
+    <section id="portfolio" className="relative py-24 md:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

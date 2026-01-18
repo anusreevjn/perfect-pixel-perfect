@@ -35,17 +35,17 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-24 md:py-32">
+    <section id="services" className="relative py-24 md:py-32 bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-bold tracking-[0.2em] uppercase text-primary mb-4">
             Our Services
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             What We Offer
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-lg text-slate-600">
             From stunning websites to professional video editing, we've got you covered
             with fast, reliable, and confidential service.
           </p>
@@ -56,15 +56,15 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl bg-card border border-border p-8 card-hover gradient-border"
+              className="group relative rounded-2xl bg-white border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                 <service.icon className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-slate-600 leading-relaxed">
                 {service.description}
               </p>
             </div>

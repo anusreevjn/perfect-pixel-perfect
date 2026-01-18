@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Zap, Flame, Clock } from "lucide-react";
+import { ArrowRight, Check, Zap, Clock } from "lucide-react";
 
 const Hero = () => {
   const services = [
@@ -16,10 +16,10 @@ const Hero = () => {
       
       <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 text-center">
         {/* Promo Badge */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-6 py-3 border-glow backdrop-blur-sm">
-          <Flame className="h-4 w-4 text-primary animate-pulse" />
+        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-6 py-3 border-glow backdrop-blur-sm">
+          <Zap className="h-4 w-4 text-primary" />
           <span className="text-sm font-medium text-foreground">
-            First 5 Slots Get This Crazy Price!
+            10-15% Market Rate • 100% Quality
           </span>
         </div>
 
