@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/perfect-pixel-perfect/", // <--- ADD THIS LINE (use your actual repo name)
   server: {
     host: "::",
     port: 8080,
